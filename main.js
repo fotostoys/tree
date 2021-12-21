@@ -44,7 +44,8 @@ const lightHelper = new THREE.PointLightHelper(pointLight)
 
 //traza una linea horizontal
  const gridHelper = new THREE.GridHelper(200, 50);
- scene.add(lightHelper, gridHelper)
+ // traza la linea y muestra el prisma de luz
+ //scene.add(lightHelper, gridHelper)
 
  // agrega una grilla al hacer clic y mover el mouse
  //const controls = new OrbitControls(camera, renderer.domElement);
@@ -106,7 +107,7 @@ function animate() {
   torus.rotation.y += 0.005;
   torus.rotation.z += 0.01;
 
-  //moon.rotation.x += 0.005;
+  moon.rotation.x += 0.005;
 
   // controls.update();
 
