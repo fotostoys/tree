@@ -1,7 +1,7 @@
 //import './style.css'
 //import * as THREE from 'three';
 import * as THREE from 'https://unpkg.com/three@0.127.0/build/three.module.js';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+//import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 //import { OrbitControls } from 'https://unpkg.com/three@0.128.0/examples/jsm/controls/OrbitControls.js';
 
 const scene = new THREE.Scene();
@@ -47,7 +47,7 @@ const lightHelper = new THREE.PointLightHelper(pointLight)
  scene.add(lightHelper, gridHelper)
 
  // agrega una grilla al hacer clic y mover el mouse
- const controls = new OrbitControls(camera, renderer.domElement);
+ //const controls = new OrbitControls(camera, renderer.domElement);
 
  function addStar() {
   const geometry = new THREE.SphereGeometry(0.1, 48, 48);
